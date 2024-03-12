@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import school_json_data
+from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('school_json_data/', school_json_data,name='school_json_data'),
+    path('post_data/', post_data,name='post_data'),
 ]
